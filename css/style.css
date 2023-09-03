@@ -154,8 +154,10 @@
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+
 }
 
 .legend__last {
   padding-bottom: 30px;
+  cursor: pointer;
 }
