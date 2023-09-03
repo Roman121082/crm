@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link href="css/style.css" rel="stylesheet">
+  <title>crm</title>
+</head>
+
+<body>
+  <div class="modal">
+    <h1 class="modal__title">Добавить ТОВАР</h1>
+    <button type="button" class="button-closed">
+      <span class="closed closed1"></span>
+      <span class="closed closed2"></span>
+    </button>
+    <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
+      <fieldset class="fieldset">
+        <legend class="legend">
+          наименование
+        </legend>
+        <input class="input" type="text" name="name" id="name" required>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="legend">
+          Категория
+        </legend>
+        <input class="input" type="text" name="name" id="
+        category" required>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="legend">
+          Единицы измерения
+        </legend>
+        <input class="input" type="text" name="name" id="units" required>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="legend">
+          Дисконт
+        </legend>
+        <label>
+          <input type="checkbox" class="checkbox" value="discount">
+          <span class="check-style"></span>
+          <input class="input input-check" type="text" name="name" id="discount" required>
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="legend">
+          Описание
+        </legend>
+        <textarea class="textarea" type="text" name="name" id="description" rows="6" required>
+        </textarea>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="legend">
+          Количество
+        </legend>
+        <input class="input" type="text" name="name" id="quantity" required>
+      </fieldset>
+
+      <fieldset class="fieldset legend__last">
+        <legend class="legend">
+          Цена
+        </legend>
+        <input class="input" type="text" name="name" id="price" required>
+      </fieldset>
+
+      <button class="submit" type="submit">добавить товар</button>
+    </form>
+  </div>
+</body>
+
+</html>
