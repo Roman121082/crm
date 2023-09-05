@@ -38,6 +38,7 @@
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
+  z-index: 5;
 }
 
 .modal__form {
