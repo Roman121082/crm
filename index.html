@@ -13,71 +13,40 @@
 </head>
 
 <body>
-  <div class="modal">
-    <h1 class="modal__title">Добавить ТОВАР</h1>
-    <button type="button" class="button-closed">
-      <span class="closed closed1"></span>
-      <span class="closed closed2"></span>
+  <div class="modal__window">
+    <button type="button" class="button__closed">
     </button>
-    <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
-      <fieldset class="fieldset">
-        <legend class="legend">
-          наименование
-        </legend>
-        <input class="input" type="text" name="name" id="name" required>
-      </fieldset>
+    <h3 class="modal__title">Добавить товар</h3>
+    <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
+      <fieldset class="form__fieldset">
+        <label class="form__label" for="name__product">Наименование</label>
+        <input class="input__text" type="text" name="name__product" id="name__product" required>
 
-      <fieldset class="fieldset">
-        <legend class="legend">
-          Категория
-        </legend>
-        <input class="input" type="text" name="name" id="
-        category" required>
-      </fieldset>
+        <label class="form__label" for="caregory">Категория</label>
+        <input class="input__text" type="text" name="caregory" id="caregory" required>
 
-      <fieldset class="fieldset">
-        <legend class="legend">
-          Единицы измерения
-        </legend>
-        <input class="input" type="text" name="name" id="units" required>
-      </fieldset>
+        <label class="form__label" for="units">Единицы измерения</label>
+        <input class="input__text" type="text" name="units" id="units" required />
 
-      <fieldset class="fieldset">
-        <legend class="legend">
-          Дисконт
-        </legend>
-        <label>
-          <input type="checkbox" class="checkbox" value="discount">
-          <span class="check-style"></span>
-          <input class="input input-check" type="text" name="name" id="discount" required>
-        </label>
-      </fieldset>
 
-      <fieldset class="fieldset">
-        <legend class="legend">
-          Описание
-        </legend>
-        <textarea class="textarea" type="text" name="name" id="description" rows="6" required>
-        </textarea>
-      </fieldset>
+        <label class="form__label" for="discount">Дисконт</label>
+        <input class="form__checkbox" type="checkbox" aria-label="Добавить скидку" />
+        <input class="input__text input__text_right" type="text" name="discount" id="discount" />
 
-      <fieldset class="fieldset">
-        <legend class="legend">
-          Количество
-        </legend>
-        <input class="input" type="text" name="name" id="quantity" required>
-      </fieldset>
+        <label class="form__label" for="description">Описание</label>
+        <textarea class="form__textarea" name="description" id="description" rows="6" required></textarea>
 
-      <fieldset class="fieldset legend__last">
-        <legend class="legend">
-          Цена
-        </legend>
-        <input class="input" type="text" name="name" id="price" required>
-      </fieldset>
+        <label class="form__label" for="count">Количество</label>
+        <input class="input__text" name="count" id="count" required>
 
-      <button class="submit" type="submit">добавить товар</button>
+        <label class="form__label" for="price">Цена</label>
+        <input class="input__text" name="price" id="price" required>
+      </fieldset>
+      <button class="submit" type="submit">Добавить товар
+      </button>
     </form>
   </div>
+
 </body>
 
 </html>

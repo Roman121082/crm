@@ -13,3 +13,27 @@ body {
 p {
   margin: 0;
 }
+
+form {
+  margin: 0;
+  border: none;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+input {
+  border: none;
+}
+
+input[type=checkbox] {
+  border: 0;
+  outline: 0;
+}
+
+.checkbox {
+  border: none;
+}
