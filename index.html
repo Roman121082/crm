@@ -13,36 +13,37 @@
 </head>
 
 <body>
-  <div class="modal__window">
-    <button type="button" class="button__closed">
+  <div class="modal">
+    <button type="button" class="modal__close">
     </button>
-    <h3 class="modal__title">Добавить товар</h3>
-    <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
+    <p class="modal__title">Добавить товар</p>
+    <form class="form modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
       <fieldset class="form__fieldset">
         <label class="form__label" for="name__product">Наименование</label>
-        <input class="input__text" type="text" name="name__product" id="name__product" required>
+        <input class="form__input" type="text" name="name__product" id="name__product" required>
 
         <label class="form__label" for="caregory">Категория</label>
-        <input class="input__text" type="text" name="caregory" id="caregory" required>
+        <input class="form__input" type="text" name="caregory" id="caregory" required>
 
         <label class="form__label" for="units">Единицы измерения</label>
-        <input class="input__text" type="text" name="units" id="units" required />
-
+        <input class="form__input" type="text" name="units" id="units" required>
 
         <label class="form__label" for="discount">Дисконт</label>
-        <input class="form__checkbox" type="checkbox" aria-label="Добавить скидку" />
-        <input class="input__text input__text_right" type="text" name="discount" id="discount" />
+        <div class="form__optional-input">
+          <input class="form__checkbox" type="checkbox" aria-label="Добавить скидку">
+          <input class="form__input" type="text" name="discount" id="discount" disabled>
+        </div>
 
         <label class="form__label" for="description">Описание</label>
-        <textarea class="form__textarea" name="description" id="description" rows="6" required></textarea>
+        <textarea class="form__input" name="description" id="description" rows="5" required></textarea>
 
         <label class="form__label" for="count">Количество</label>
-        <input class="input__text" name="count" id="count" required>
+        <input class="form__input" name="count" id="count" required>
 
         <label class="form__label" for="price">Цена</label>
-        <input class="input__text" name="price" id="price" required>
+        <input class="form__input" name="price" id="price" required>
       </fieldset>
-      <button class="submit" type="submit">Добавить товар
+      <button class="form__submit" type="submit">Добавить товар
       </button>
     </form>
   </div>

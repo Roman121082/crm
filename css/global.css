@@ -29,11 +29,6 @@ input {
   border: none;
 }
 
-input[type=checkbox] {
-  border: 0;
-  outline: 0;
-}
-
 .checkbox {
-  border: none;
+  border: 0;
 }
