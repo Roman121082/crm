@@ -19,35 +19,71 @@
     <p class="modal__title">Добавить товар</p>
     <form class="form modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
       <fieldset class="form__fieldset">
-        <label class="form__label" for="name__product">Наименование</label>
-        <input class="form__input" type="text" name="name__product" id="name__product" required>
+        <div class="form__fieldset-box">
+          <div class="form__box">
+            <label class="form__label" for="name__product">Наименование</label>
+            <input class="form__input" type="text" name="name__product" id="name__product" required>
+          </div>
 
-        <label class="form__label" for="caregory">Категория</label>
-        <input class="form__input" type="text" name="caregory" id="caregory" required>
 
-        <label class="form__label" for="units">Единицы измерения</label>
-        <input class="form__input" type="text" name="units" id="units" required>
+          <div class="form__box--description">
+            <label class="form__label" for="description">Описание</label>
+            <textarea class="form__input" name="description" id="description" rows="5" required></textarea>
+          </div>
 
-        <label class="form__label" for="discount">Дисконт</label>
-        <div class="form__optional-input">
-          <input class="form__checkbox" type="checkbox" aria-label="Добавить скидку">
-          <input class="form__input" type="text" name="discount" id="discount" disabled>
+          <div class="form__box">
+            <label class="form__label" for="caregory">Категория</label>
+            <input class="form__input" type="text" name="caregory" id="caregory" required>
+          </div>
+
+
+          <div class="form__box">
+            <label class="form__label" for="units">Единицы измерения</label>
+            <input class="form__input" type="text" name="units" id="units" required>
+          </div>
+
+          <div class="form__box">
+            <label class="form__label" for="count">Количество</label>
+            <input class="form__input" name="count" id="count" required>
+          </div>
+
+          <div class="form__box">
+            <label class="form__label" for="discount">Дисконт</label>
+            <div class="form__optional-input">
+              <input class="form__checkbox" type="checkbox" aria-label="Добавить скидку">
+              <input class="form__input" type="text" name="discount" id="discount" disabled>
+            </div>
+
+          </div>
+
+
+          <div class="form__box">
+            <label class="form__label" for="price">Цена</label>
+            <input class="form__input" name="price" id="price" required>
+          </div>
+
+
         </div>
-
-        <label class="form__label" for="description">Описание</label>
-        <textarea class="form__input" name="description" id="description" rows="5" required></textarea>
-
-        <label class="form__label" for="count">Количество</label>
-        <input class="form__input" name="count" id="count" required>
-
-        <label class="form__label" for="price">Цена</label>
-        <input class="form__input" name="price" id="price" required>
+        <button class="form__submit form__submit--img" type="submit">Добавить изображение
+        </button>
       </fieldset>
-      <button class="form__submit" type="submit">Добавить товар
-      </button>
+
+      <div class="form__submit-box">
+        <p class="form__text">
+          Итоговая стоимость:
+          <span class="form__subtext">$ 900.00</span>
+        </p>
+
+        <button class="form__submit" type="submit">Добавить товар
+        </button>
+      </div>
     </form>
   </div>
-
+  <div class="error">
+    <button type="button" class="modal__close">
+    </button>
+    <p class="error__text">Что-то пошло не так</p>
+  </div>
 </body>
 
 </html>
