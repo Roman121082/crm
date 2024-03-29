@@ -1,7 +1,7 @@
 @import "fonts.css";
 @import "normalize.css";
 @import "global.css";
-
+@import "product.css";
 
 .modal {
   position: relative;
@@ -14,25 +14,42 @@
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
-.modal__title {
+
+.title {
   position: relative;
   font-family: 'Inter-Bold', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 10%;
-  margin: 0 0 40px 0;
+  color: #6E6893;
 }
 
-.modal__title::after {
+.table__title {
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+
+.modal__title {
+  margin-bottom: 40px;
+}
+
+.title::after {
   position: absolute;
   content: "";
   left: 0;
-  top: 50px;
   width: 100%;
   height: 1px;
   background-color: #C6C2DE;
   z-index: 5;
+}
+
+.modal__title::after {
+  top: 50px;
+}
+
+.table__title::after {
+  top: 117px;
 }
 
 .modal__close {

@@ -13,10 +13,136 @@
 </head>
 
 <body>
+
+  <div class="container">
+    <p class="title table__title">CMS</p>
+    <div class="search-box">
+      <div class="filter">
+        <button type="button" class="filter__button">Фильтр</button>
+        <input class="filter__search" type="text" placeholder="Поиск по наименованию и категории">
+      </div>
+
+      <button class="form__submit" type="submit">Добавить товар
+      </button>
+    </div>
+
+    <div class="product">
+      <table class="product__table">
+        <thead class="product__head">
+          <tr>
+            <th>
+              ID
+            </th>
+            <th>
+              Наименование
+            </th>
+            <th>
+              Категория
+            </th>
+            <th>
+              ед/изм
+            </th>
+            <th>
+              количество
+            </th>
+            <th>
+              цена
+            </th>
+            <th>
+              ИТОГ
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="product__body">
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/no-image.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+
+          <tr>
+            <td>937295527</td>
+            <td>Настольная игра “На 4-х ногах”</td>
+            <td>Настольные игры</td>
+            <td>шт</td>
+            <td>12</td>
+            <td>$14</td>
+            <td>$168</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot></tfoot>
+      </table>
+    </div>
+
+  </div>
   <div class="modal">
     <button type="button" class="modal__close">
     </button>
-    <p class="modal__title">Добавить товар</p>
+    <p class="title modal__title">Добавить товар</p>
     <form class="form modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
       <fieldset class="form__fieldset">
         <div class="form__fieldset-box">
@@ -64,8 +190,8 @@
 
 
         </div>
-        <button class="form__submit form__submit--img" type="submit">Добавить изображение
-        </button>
+        <input class="form__submit form__submit--img" type="file">
+
       </fieldset>
 
       <div class="form__submit-box">

@@ -4,7 +4,6 @@
 
 
 body {
-  padding: 50px;
   font-family: 'Inter-SemiBold', sans-serif;
   font-weight: 600;
 }
@@ -31,4 +30,10 @@ input {
 
 .checkbox {
   border: 0;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
