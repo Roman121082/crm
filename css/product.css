@@ -5,6 +5,7 @@
   color: #25213B;
   overflow-x: auto;
   border-radius: 0 0 8px 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 .table__title-box {
@@ -78,6 +79,7 @@
   padding: 0 20px;
   background-color: #fff;
   border-radius: 8px 8px 0 0;
+  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.25);
 }
 
 .filter__search {
@@ -157,17 +159,19 @@
 
 .nav-box {
   display: flex;
-  justify-content: space-between;
-  float: right;
+  justify-content: flex-end;
+  width: 100%;
   padding-right: 20px;
   height: 45px;
   font-size: 12px;
   line-height: 15px;
+  background-color: rgba(244, 242, 255, 1);
+  border: 0 0 8px 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
 }
 
 .nav__select-colpages {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
