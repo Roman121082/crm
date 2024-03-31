@@ -12,10 +12,28 @@
   <title>crm</title>
 </head>
 
+<!-- <header>
+  <div class="container">
+    <div class="header-box">
+      <p class="title table__title">CMS</p>
+      <p class="header__text">
+        Итоговая стоимость:
+        <span class="header__subtext">$ 900.00</span>
+      </p>
+    </div>
+  </div>
+</header> -->
+
 <body>
 
   <div class="container">
-    <p class="title table__title">CMS</p>
+    <div class="table__title-box">
+      <p class="title table__title">CRM</p>
+      <p class="title__text">
+        Итоговая стоимость:
+        <span class="title__subtext">$ 900.00</span>
+      </p>
+    </div>
     <div class="search-box">
       <div class="filter">
         <button type="button" class="filter__button">Фильтр</button>
@@ -49,7 +67,7 @@
               цена
             </th>
             <th>
-              ИТОГ
+              Итог
             </th>
             <th></th>
             <th></th>
@@ -132,84 +150,209 @@
               <img src="images/icon/delete-outlined.svg" alt="">
             </td>
           </tr>
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td>246016548</td>
+            <td>Навигационная система Soundmax</td>
+            <td>Техника для дома</td>
+            <td>шт</td>
+            <td>5</td>
+            <td>$100</td>
+            <td>$500</td>
+            <td>
+              <img src="images/icon/picture-line.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/icons-edit.svg" alt="">
+            </td>
+            <td>
+              <img src="images/icon/delete-outlined.svg" alt="">
+            </td>
+          </tr>
         </tbody>
 
         <tfoot></tfoot>
       </table>
+
+      <div class="nav-box">
+        <div class="nav__select-colpages">
+          <div class="nav__select-text">
+            <p class="nav__text">Показывать на странице: 10
+            </p>
+            <select class="nav__select" name="" id="">
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+          <p class="pagination__text">1-10 of 276</p>
+          <div class="pagination-pages">
+            <span class="span-left"></span>
+            <span class="span-right"></span>
+          </div>
+        </div>
+      </div>
     </div>
-
-  </div>
-  <div class="modal">
-    <button type="button" class="modal__close">
-    </button>
-    <p class="title modal__title">Добавить товар</p>
-    <form class="form modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
-      <fieldset class="form__fieldset">
-        <div class="form__fieldset-box">
-          <div class="form__box">
-            <label class="form__label" for="name__product">Наименование</label>
-            <input class="form__input" type="text" name="name__product" id="name__product" required>
-          </div>
-
-
-          <div class="form__box--description">
-            <label class="form__label" for="description">Описание</label>
-            <textarea class="form__input" name="description" id="description" rows="5" required></textarea>
-          </div>
-
-          <div class="form__box">
-            <label class="form__label" for="caregory">Категория</label>
-            <input class="form__input" type="text" name="caregory" id="caregory" required>
-          </div>
-
-
-          <div class="form__box">
-            <label class="form__label" for="units">Единицы измерения</label>
-            <input class="form__input" type="text" name="units" id="units" required>
-          </div>
-
-          <div class="form__box">
-            <label class="form__label" for="count">Количество</label>
-            <input class="form__input" name="count" id="count" required>
-          </div>
-
-          <div class="form__box">
-            <label class="form__label" for="discount">Дисконт</label>
-            <div class="form__optional-input">
-              <input class="form__checkbox" type="checkbox" aria-label="Добавить скидку">
-              <input class="form__input" type="text" name="discount" id="discount" disabled>
+    <div class="modal">
+      <button type="button" class="modal__close">
+      </button>
+      <p class="title modal__title">Добавить товар</p>
+      <form class="form modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+        name="add-product">
+        <fieldset class="form__fieldset">
+          <div class="form__fieldset-box">
+            <div class="form__box">
+              <label class="form__label" for="name__product">Наименование</label>
+              <input class="form__input" type="text" name="name__product" id="name__product" required>
             </div>
 
+
+            <div class="form__box--description">
+              <label class="form__label" for="description">Описание</label>
+              <textarea class="form__input" name="description" id="description" rows="5" required></textarea>
+            </div>
+
+            <div class="form__box">
+              <label class="form__label" for="caregory">Категория</label>
+              <input class="form__input" type="text" name="caregory" id="caregory" required>
+            </div>
+
+
+            <div class="form__box">
+              <label class="form__label" for="units">Единицы измерения</label>
+              <input class="form__input" type="text" name="units" id="units" required>
+            </div>
+
+            <div class="form__box">
+              <label class="form__label" for="count">Количество</label>
+              <input class="form__input" name="count" id="count" required>
+            </div>
+
+            <div class="form__box">
+              <label class="form__label" for="discount">Дисконт</label>
+              <div class="form__optional-input">
+                <input class="form__checkbox" type="checkbox" aria-label="Добавить скидку">
+                <input class="form__input" type="text" name="discount" id="discount" disabled>
+              </div>
+
+            </div>
+
+
+            <div class="form__box">
+              <label class="form__label" for="price">Цена</label>
+              <input class="form__input" name="price" id="price" required>
+            </div>
+
+
           </div>
+          <input class="form__submit form__submit--img" type="file">
 
+        </fieldset>
 
-          <div class="form__box">
-            <label class="form__label" for="price">Цена</label>
-            <input class="form__input" name="price" id="price" required>
-          </div>
+        <div class="form__submit-box">
+          <p class="form__text">
+            Итоговая стоимость:
+            <span class="form__subtext">$ 900.00</span>
+          </p>
 
-
+          <button class="form__submit" type="submit">Добавить товар
+          </button>
         </div>
-        <input class="form__submit form__submit--img" type="file">
-
-      </fieldset>
-
-      <div class="form__submit-box">
-        <p class="form__text">
-          Итоговая стоимость:
-          <span class="form__subtext">$ 900.00</span>
-        </p>
-
-        <button class="form__submit" type="submit">Добавить товар
-        </button>
-      </div>
-    </form>
-  </div>
-  <div class="error">
-    <button type="button" class="modal__close">
-    </button>
-    <p class="error__text">Что-то пошло не так</p>
-  </div>
+      </form>
+    </div>
+    <div class="error">
+      <button type="button" class="modal__close">
+      </button>
+      <p class="error__text">Что-то пошло не так</p>
+    </div>
 </body>
 
 </html>

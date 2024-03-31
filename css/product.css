@@ -7,6 +7,41 @@
   border-radius: 0 0 8px 8px;
 }
 
+.table__title-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20px 0px 20px;
+  margin-bottom: 30px;
+  max-width: 1100px;
+}
+
+.table__title-box::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 113px;
+  width: 100%;
+  height: 1px;
+  background-color: #C6C2DE;
+  z-index: 5;
+}
+
+.title__text {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: none;
+  font-weight: 400;
+  color: #25213B;
+}
+
+.title__subtext {
+  font-weight: 600;
+  color: #6D5BD0;
+}
+
+
 .filter__button {
   position: relative;
   margin-right: 20px;
@@ -15,6 +50,7 @@
   padding: 10px 10px 10px 40px;
   border: 1px solid #C6C2DE;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .filter__button::after {
@@ -40,6 +76,8 @@
   align-items: center;
   height: 70px;
   padding: 0 20px;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
 }
 
 .filter__search {
@@ -50,6 +88,7 @@
   line-height: 15px;
   padding: 13px 40px;
   border-radius: 6px;
+  outline: none;
 }
 
 .filter__search::placeholder {
@@ -73,6 +112,10 @@
 
 .product__head tr {
   border: 1px solid #D9D5EC;
+}
+
+.product__body {
+  background-color: #fff;
 }
 
 .product__table td {
@@ -100,6 +143,7 @@
   color: #6E6893;
   text-align: left;
   height: 45px;
+  text-transform: uppercase;
 }
 
 .product__head th {
@@ -109,4 +153,65 @@
 .product__body tr {
   height: 60px;
   text-align: center;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  padding-right: 20px;
+  height: 45px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.nav__select-colpages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__select-text {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.pagination__text {
+  margin-right: 50px;
+}
+
+.pagination-pages {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+}
+
+.span-left,
+.span-right {
+  position: relative;
+}
+
+.span-left::after {
+  content: "";
+  position: absolute;
+  background-image: url('../images/icon/arrow-left.svg');
+  width: 6px;
+  height: 10px;
+  left: 0;
+  top: -5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.span-right::after {
+  content: "";
+  position: absolute;
+  background-image: url('../images/icon/arrow-right.svg');
+  width: 6px;
+  height: 10px;
+  left: 0;
+  top: -5px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
